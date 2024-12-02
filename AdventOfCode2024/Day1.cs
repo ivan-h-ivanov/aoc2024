@@ -9,7 +9,7 @@ namespace AdventOfCode2024
     {
         private static (List<int> left, List<int> right) Parse()
         {
-            var lines = File.ReadAllLines("input1_1.txt");
+            var lines = File.ReadAllLines("input/input1_1.txt");
 
             var left = new List<int>(lines.Length);
             var right = new List<int>(lines.Length);
