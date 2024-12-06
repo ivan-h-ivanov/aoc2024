@@ -43,6 +43,12 @@ namespace AdventOfCode2024
                     case "5.2":
                         Console.WriteLine(Day5.Star2());
                         break;
+                    case "6.1":
+                        Console.WriteLine(Day6.Star1());
+                        break;
+                    case "6.2":
+                        Console.WriteLine(Day6.Star2());
+                        break;
                     default:
                         Console.WriteLine("Format should be #D.#S, i.e. 4.2 for day 4, star 2");
                         break;
