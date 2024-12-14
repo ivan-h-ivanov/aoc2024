@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Xml.Linq;
 
 namespace AdventOfCode2024
 {
@@ -14,6 +11,10 @@ namespace AdventOfCode2024
             return Calc(false);
         }
 
+        internal static long Star2()
+        {
+            return Calc(true);
+        }
         private static int Calc(bool longSignal)
         {
             var lines = File.ReadAllLines("input/input8_1.txt");
@@ -74,11 +75,6 @@ namespace AdventOfCode2024
                 a1 = first.Item1 + first.Item1 - second.Item1;
                 a2 = first.Item2 + first.Item2 - second.Item2;
             }
-        }
-
-        internal static long Star2()
-        {
-            return Calc(true);
         }
     }
 }
